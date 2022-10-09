@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter> 
     <div className="App">
-      <img src={banner} alt="" width="100%" height="100%" />
+      <img src={banner} alt="" width="85%" height="85%" />
       <nav className="navbar navbar-expand-lg  bg-light">
   <div className="container-fluid">
     

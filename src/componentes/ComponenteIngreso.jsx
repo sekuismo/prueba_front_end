@@ -25,9 +25,11 @@ function ComponenteIngreso() {
   */
   return (
     <div>
+      <p className="display-1 m-3 " > Ingreso de usuario</p>
       <form className='needs-validation' noValidate >
       
        <div className="row justify-content-md-center mt-3 ">
+        
         
         <div className="col-2">
           <label htmlFor="rut" className="   col-form-label " >Rut</label>
@@ -85,6 +87,9 @@ function ComponenteIngreso() {
           <input type="text" id="materno" className="form-control " required />
           <div className="valid-feedback">
             Apellido Válido! 
+          </div>
+          <div className="invalid-feedback">
+            Apellido inválido 😿
           </div>
           
           
