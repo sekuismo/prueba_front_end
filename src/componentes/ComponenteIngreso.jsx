@@ -88,9 +88,7 @@ function ComponenteIngreso() {
           <div className="valid-feedback">
             Apellido Válido! 
           </div>
-          <div className="invalid-feedback">
-            Apellido inválido 😿
-          </div>
+        
           
           
        

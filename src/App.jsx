@@ -6,6 +6,8 @@ import ComponenteNotFound from './componentes/ComponenteNotFound'
 import ComponenteMantenedor from './componentes/ComponenteMantenedor'
 import ComponenteProducto from './componentes/ComponenteProducto'
 import ComponenteGestion from './componentes/ComponenteGestion'
+import ComponenteVerCatalogo from './componentes/ComponenteVerCatalogo'
+import ComponenteIniciarSesion from './componentes/ComponenteIniciarSesion'
 
 
 function App() {
@@ -15,8 +17,10 @@ function App() {
     <BrowserRouter> 
     <div className="App">
       <img src={banner} alt="" width="85%" height="85%" />
-      <nav className="navbar navbar-expand-lg  bg-light">
+      <nav className="navbar   navbar-expand-lg  bg-light">
   <div className="container-fluid">
+    <a href="catalogo" className='catologo '> Ver catálogo</a>
+    <a href="iniciar-sesion" className=' sesion'>Iniciar sesión</a>
     
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav">
@@ -65,10 +69,17 @@ function App() {
         <Route path='/usuario' element={<ComponenteMantenedor/>}  ></Route>
         <Route path='/ingreso-productos' element={<ComponenteProducto/>}  > </Route>
         <Route path='/gestion-productos' element={<ComponenteGestion/> }></Route>
+
+        <Route path ='/catalogo' element={<ComponenteVerCatalogo/>}></Route>
+        <Route path='/iniciar-sesion' element={<ComponenteIniciarSesion/>} ></Route>
         <Route path ="*" element={<ComponenteNotFound/>}></Route>
       </Routes>
+
+
+    
       
     </div>
+    <footer>© Ferre Ferretería Copyright  1492-2022 </footer>
     </BrowserRouter>
 
   )

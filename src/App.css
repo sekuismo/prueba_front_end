@@ -16,3 +16,28 @@ max-width: 1280px;
   padding: 20px;
 }
 
+.catologo{
+  position: absolute;
+  margin-bottom: 550px;
+  margin-left: -7px;
+  border: solid 2px black;
+  text-decoration: none;
+  color: black;
+  padding: 7px;
+}
+
+.sesion{
+  position:absolute;
+  margin-bottom: 550px;
+  margin-left: 1411px;
+  text-decoration: none;
+  color: black;
+  border:solid 2px black;
+  padding: 7px;
+}
+
+
+footer{
+  margin-top: 30px;
+  padding: 10px;
+}
