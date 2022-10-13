@@ -8,6 +8,8 @@ import ComponenteProducto from './componentes/ComponenteProducto'
 import ComponenteGestion from './componentes/ComponenteGestion'
 import ComponenteVerCatalogo from './componentes/ComponenteVerCatalogo'
 import ComponenteIniciarSesion from './componentes/ComponenteIniciarSesion'
+import ComponenteHome from './componentes/ComponenteHome'
+
 
 
 function App() {
@@ -63,8 +65,9 @@ function App() {
   </div>
 </nav>
 
-
+      
       <Routes>
+        <Route path="/" ></Route>
         <Route path='/ingreso' element={<ComponenteIngreso/>} ></Route>
         <Route path='/usuario' element={<ComponenteMantenedor/>}  ></Route>
         <Route path='/ingreso-productos' element={<ComponenteProducto/>}  > </Route>
@@ -74,6 +77,8 @@ function App() {
         <Route path='/iniciar-sesion' element={<ComponenteIniciarSesion/>} ></Route>
         <Route path ="*" element={<ComponenteNotFound/>}></Route>
       </Routes>
+
+
 
 
     
